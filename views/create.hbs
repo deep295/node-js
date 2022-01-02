@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{viewTitle}}</h1>
+    <form action="/employee/add" method="post">
+        <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Contactno</label>
+                    <input type="number" name="phone_no" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" name="age" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <input type="radio" name="gender" class="form-control" value="Male">Male
+                    <input type="radio" name="gender" class="form-control" value="Female">Female
+                </div>
+                <div class="form-group">
+                    <label>City</label>
+                    <select name="city" id="City">
+                        <option value="Surat">Surat</option>
+                        <option value="Valsad">Valsad</option>
+                        <option value="Vapi">Vapi</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+    </form>
+</body>
+</html>
