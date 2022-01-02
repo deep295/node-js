@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>{{viewTitle}}</h1>
+    <a href="/employee">Add</a>
+    <table border="1">
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phoneno</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>City</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            {{#each data}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.phone_no}}</td>
+                <td>{{this.age}}</td>
+                <td>{{this.gender}}</td>
+                <td>{{this.city}}</td>
+                <th><a href="/employee/delete/{{this._id}}">Delete</a></th>
+                <th><a href="/employee/edit/{{this._id}}">Update</a></th>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</body>
+</html>
